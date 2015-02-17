@@ -1,0 +1,118 @@
+.bigMenu {
+  position: absolute;
+  width: 100%;
+  background-color: #EFEFEF;
+  left: 0;
+  display: none;
+  padding: 50px;
+  z-index: 100;
+  box-shadow: 0px 3px 4px 0px #aaa;
+}
+.bigMenu .right {
+  width: 50%;
+}
+
+.top-bar-section .right li {
+  &:hover{
+    &:not(.has-form) > a{
+      background-color: #EFEFEF;
+      color: #666666;
+    }
+    .bigMenu{
+      @media #{$large-up} {
+        display: block;
+
+      }
+
+    }
+  }
+}
+.top-bar-section .bigMenu {
+  .twoColumn{
+    overflow:hidden;
+    li{
+      float:left;
+      display:inline;
+      width: 50%;
+    }
+  }
+  ul li {
+    float: none;
+    background: none;
+  }
+}
+.fullWidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+.hpSection {
+  padding: 35px 0;
+  i {
+    font-size: 30px;
+    margin: 0 4px;
+  }
+  &.grey {
+    background-color: #eee;
+  }
+  &.darkGrey {
+    background-color: #888888;
+    color: white;
+    h2, h3, h4, h6{
+      color: #5C5C5C;
+    }
+  }
+  &.darkerGrey {
+    background-color: #6E6E6E;
+    color: white;
+    h2, h3, h6{
+      color: white;
+    }
+  }
+  &.breadcrumb{
+    padding:0;
+    .breadcrumbs{
+      background: none;
+      border:none;
+      padding:10px 0;
+      margin: 0;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.row.clearfix.featured {
+  padding: 1%;
+  .panel.right{
+    height:323px;
+  }
+}
+
+.event {
+  background: #666;
+  height:150px;
+  color: white;
+  padding:10px;
+  text-align: center;
+  .month, .day, .year{
+    display: block;
+  }
+  .month, .day{
+    font-size: 1.5rem;
+  }
+}
+.event-image {
+  width: 50%;
+  height: 150px;
+  overflow: hidden;
+  img {
+    width:100%;
+  }
+}
+.listView{
+  padding: 5px 0;
+  border-bottom: 1px solid #AAAAAA;
+}
