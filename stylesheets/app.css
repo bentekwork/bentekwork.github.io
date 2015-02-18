@@ -11021,3 +11021,8 @@ th.hide-for-touch {
   padding: 5px 0;
   border-bottom: 1px solid #AAAAAA;
 }
+
+/* line 120, ../scss/_wmsc.scss */
+.large-3 .large-12 {
+  margin: 5px 0 0;
+}
