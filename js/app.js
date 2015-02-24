@@ -10,3 +10,9 @@ $('#list').on('click', function(){
     $('.gridView').hide();
     $('.listView').show();
 })
+$('.rfp').on('click', function(){
+    $('.modal').show();
+});
+$('.modal-close').on('click', function(){
+    $('.modal').hide();
+});

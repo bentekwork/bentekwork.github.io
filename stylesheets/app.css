@@ -11037,3 +11037,22 @@ th.hide-for-touch {
 .event-footer li a {
   color: #ffffff;
 }
+
+/* line 133, ../scss/_wmsc.scss */
+.footer-menu ul {
+  float: left;
+  width: 33%;
+}
+
+/* line 138, ../scss/_wmsc.scss */
+.modal {
+  position: fixed;
+  top: 100px;
+  width: 800px;
+  margin: 0 auto;
+  background: #eeeeee;
+  padding: 50px;
+  box-shadow: 0 0 16px;
+  left: 50%;
+  margin-left: -400px;
+}
