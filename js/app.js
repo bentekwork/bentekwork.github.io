@@ -10,9 +10,5 @@ $('#list').on('click', function(){
     $('.gridView').hide();
     $('.listView').show();
 })
-$('.rfp').on('click', function(){
-    $('.modal').show();
-});
-$('.modal-close').on('click', function(){
-    $('.modal').hide();
-});
+$(".header-wrapper").load("header.html");
+$(".footer-wrapper").load("footer.html");
