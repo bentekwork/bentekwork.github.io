@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="js/chosen/chosen.css" />
+    <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -50,7 +50,23 @@
     <div class="hpSection white">
       <div class="row">
         <div class="small-4 columns">
-          <input type="text" placeholder="Search">
+          <div class="row">
+            <div class="small-3 columns">
+              <label class="right inline">Category</label>
+            </div>
+            <div class="small-9 columns">
+              <div class="row collapse">
+                <div class="small-12 columns">
+                  <select class="chosen">
+                    <option value="husker">NCAA</option>
+                    <option value="starbuck">Guest Blogger</option>
+                    <option value="hotdog">Basketball</option>
+                    <option value="apollo">Van Andel</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="small-4 columns">
           <div class="row">
@@ -59,7 +75,7 @@
             </div>
             <div class="small-9 columns">
               <div class="row collapse">
-                <div class="small-7 columns">
+                <div class="small-12 columns">
                   <select class="chosen">
                     <option value="husker">Football</option>
                     <option value="starbuck">Baketball</option>
@@ -74,24 +90,12 @@
           </div>
         </div>
         <div class="small-4 columns">
-          <div class="row">
-            <div class="small-3 columns">
-              <label class="right inline">Category</label>
+          <div class="row collapse">
+            <div class="small-7 columns">
+              <input type="text" placeholder="Search">
             </div>
-            <div class="small-9 columns">
-              <div class="row collapse">
-                <div class="small-7 columns">
-                  <select class="chosen">
-                    <option value="husker">NCAA</option>
-                    <option value="starbuck">Guest Blogger</option>
-                    <option value="hotdog">Basketball</option>
-                    <option value="apollo">Van Andel</option>
-                  </select>
-                </div>
-                <div class="small-5 columns">
-                  <button class="button postfix">Filter</button>
-                </div>
-              </div>
+            <div class="small-5 columns">
+              <button class="button postfix">Filter</button>
             </div>
           </div>
         </div>

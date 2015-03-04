@@ -146,3 +146,16 @@
   left: 50%;
   margin-left: -400px;
 }
+
+.chosen-container-single .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-single{
+  background: none;
+  height:auto;
+  padding: 5px;
+  border-radius: 0;
+}
+
+.chosen-container-single .chosen-single div b {
+  background-size: 52px 60px !important;
+
+}

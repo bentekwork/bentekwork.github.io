@@ -11056,3 +11056,17 @@ th.hide-for-touch {
   left: 50%;
   margin-left: -400px;
 }
+
+/* line 150, ../scss/_wmsc.scss */
+.chosen-container-single .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-single {
+  background: none;
+  height: auto;
+  padding: 5px;
+  border-radius: 0;
+}
+
+/* line 158, ../scss/_wmsc.scss */
+.chosen-container-single .chosen-single div b {
+  background-size: 52px 60px !important;
+}
