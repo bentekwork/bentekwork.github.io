@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="js/chosen/chosen.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -48,7 +49,31 @@
     </div>
     <div class="hpSection white">
       <div class="row">
-        <div class="small-offset-8 small-4 columns">
+        <div class="small-4 columns">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="small-4 columns">
+          <div class="row">
+            <div class="small-3 columns">
+              <label class="right inline">Sport</label>
+            </div>
+            <div class="small-9 columns">
+              <div class="row collapse">
+                <div class="small-7 columns">
+                  <select class="chosen">
+                    <option value="husker">Football</option>
+                    <option value="starbuck">Baketball</option>
+                    <option value="hotdog">Hockey</option>
+                    <option value="apollo">Ping Pong</option>
+                    <option value="apollo">Water Polo</option>
+                    <option value="apollo">Water Pol</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-4 columns">
           <div class="row">
             <div class="small-3 columns">
               <label class="right inline">Category</label>
@@ -56,7 +81,7 @@
             <div class="small-9 columns">
               <div class="row collapse">
                 <div class="small-7 columns">
-                  <select>
+                  <select class="chosen">
                     <option value="husker">NCAA</option>
                     <option value="starbuck">Guest Blogger</option>
                     <option value="hotdog">Basketball</option>
@@ -183,6 +208,8 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/chosen/chosen.jquery.js" type="text/javascript"></script>
     <script src="js/app.js"></script>
+
   </body>
 </html>

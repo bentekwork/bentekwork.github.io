@@ -5,10 +5,20 @@ $(document).foundation();
 $('#grid').on('click', function(){
     $('.listView').hide();
     $('.gridView').show();
-})
+});
 $('#list').on('click', function(){
     $('.gridView').hide();
     $('.listView').show();
-})
-$(".header-wrapper").load("header.html");
-$(".footer-wrapper").load("footer.html");
+});
+$.get("header.html", function(data) {
+  $(".header-wrapper").replaceWith(data);
+  $(document).foundation('reflow');
+
+
+});
+$.get("footer.html", function(data) {
+  $(".footer-wrapper").replaceWith(data);
+  $(document).foundation('reflow');
+
+});
+$(".chosen").chosen();
